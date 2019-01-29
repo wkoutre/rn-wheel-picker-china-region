@@ -5,9 +5,13 @@ IOS & 安卓都兼容的中国地区选择器.
 a modal picker(wheel) of china province & city & region.
 
 ## propTypes
+
 ```
 isVisible: PropTypes.bool,
 isShowArea: PropTypes.bool,
+provincesToIgnore: PropTypes.shape({
+    provinceName: PropTypes.bool,
+}),
 selectedProvince: PropTypes.string,
 selectedCity: PropTypes.string,
 selectedArea: PropTypes.string,
@@ -16,13 +20,20 @@ animationType: PropTypes.string,
 transparent: PropTypes.bool,
 onSubmit: PropTypes.func,
 onCancel: PropTypes.func,
-androidPickerHeight: PropTypes.number   // 安卓手机下可以由该属性来设置picker区域的高度
+androidPickerHeight: PropTypes.number   // 安卓手机下可以由该属性来设置picker区域的高度,
+navStyle: ViewStyle,
+leftNavBtnStyle: ViewStyle,
+rightNavBtnStyle: ViewStyle,
+leftNavTextStyle: TextStyle,
+rightNavTextStyle: TextStyle,
 ```
 
 ## Install
+
 npm install rn-wheel-picker-china-region --save
 
 ## Usage
+
 ```javascript
 import ChinaRegionWheelPicker from 'rn-wheel-picker-china-region';
 
