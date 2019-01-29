@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/mqy1023/rn-wheel-picker-china-region.git"
   },
+  "peerDependencies": {
+    "prop-types": "15.6.2"
+  },
   "keywords": [
     "react-native",
     "modal",
