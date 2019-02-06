@@ -20,7 +20,6 @@ animationType: PropTypes.string,
 transparent: PropTypes.bool,
 onSubmit: PropTypes.func,
 onCancel: PropTypes.func,
-androidPickerHeight: PropTypes.number   // 安卓手机下可以由该属性来设置picker区域的高度,
 navStyle: ViewStyle,
 leftNavBtnStyle: ViewStyle,
 rightNavBtnStyle: ViewStyle,
@@ -70,7 +69,6 @@ import ChinaRegionWheelPicker from 'rn-wheel-picker-china-region';
   animationType={'fade'}
   onSubmit={this._onPressSubmit.bind(this)} // 点击确认_onPressSubmit
   onCancel={this._onPressCancel.bind(this)} // 点击取消_onPressCancel
-  androidPickerHeight={100}   // 安卓手机下可以设置picker区域的高度
 />
 
 <TouchableOpacity
